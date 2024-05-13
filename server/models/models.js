@@ -46,8 +46,13 @@ BasketItem.belongsTo(Basket)
 
 Item.hasMany(BasketItem)
 BasketItem.belongsTo(Item)
+
 Item.hasOne(Info)
 Info.belongsTo(Item)
+
 Type.hasMany(Item)
 Item.belongsTo(Type)
-
+ 
+module.exports = {
+    User, Basket
+}
