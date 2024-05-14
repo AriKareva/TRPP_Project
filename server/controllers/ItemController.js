@@ -1,7 +1,7 @@
 class ItemController{
 
     async create(req, res){
-
+        
     }
 
     async getAll(req, res){

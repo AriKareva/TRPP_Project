@@ -54,5 +54,5 @@ Type.hasMany(Item)
 Item.belongsTo(Type)
  
 module.exports = {
-    User, Basket
+    User, Basket, Type
 }
