@@ -6,14 +6,14 @@ const sequelize = require('./db')
 const cors = require('cors')
 const router = require('./routes/index.js')
 const errorHandler = require('./middleware/errorHandlerMiddleware.js')
-// const fileUpload = require('express-fileupload')
+const fileUpload = require('express-fileupload')
 
 const PORT = process.env.PORT || 5000
 
 const app = express()
 app.use(cors())
 app.use(express.json())
-// app.use(fileUpload({}))
+app.use(fileUpload({}))
 app.use('/api', router)
 app.use(errorHandler) 
 
